@@ -17,6 +17,7 @@ class CreateNotasTable extends Migration
             $table->id();
             $table->string('titulo');
             $table->string('contenido');
+            $table->string('categoria');
             //usuario
             $table->timestamps();
         });

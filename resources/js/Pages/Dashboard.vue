@@ -26,5 +26,8 @@
             AppLayout,
             Welcome,
         },
+        props: {
+            total_noticias: Array
+        }
     })
 </script>
