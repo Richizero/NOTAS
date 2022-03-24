@@ -2,7 +2,7 @@
     <app-layout title="Dashboard">
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                Listar noiticas
+                Listar noticias
             </h2>
         </template>
 
