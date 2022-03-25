@@ -71,7 +71,7 @@ class NotaController extends Controller
         
 
         return Inertia::render('Notas/Show',[
-            'nota' => Nota::where('id,$id')
+            'nota' => Nota::where('id',$id)
             ->where('users_id',Auth::id())
             ->first()
         ]);
