@@ -86,7 +86,7 @@ class NotaController extends Controller
     public function edit($id)
     {
         return Inertia::render('Notas/Edit',[
-            'nota' => Nota::where('id,$id')
+            'nota' => Nota::where('id',$id)
             ->where('users_id',Auth::id())
             ->first()
         ]);
@@ -108,7 +108,7 @@ class NotaController extends Controller
 
         ]);
 
-        $nota = Nota::where('id,$id')
+        $nota = Nota::where('id',$id)
         ->where('users_id',Auth::id())
         ->first();
 
@@ -125,7 +125,7 @@ class NotaController extends Controller
      */
     public function destroy($id)
     {
-        $nota = Nota::where('id,$id')
+        $nota = Nota::where('id',$id)
         ->where('users_id',Auth::id())
         ->first();
         $nota->delete();
