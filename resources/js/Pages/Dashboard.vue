@@ -21,7 +21,7 @@
                                             </tr>
                                         </thead>
                                         <tbody class="bg-white divide-y divide-gray-200">
-                                            <tr v-for="nota in total_noticias">
+                                            <tr v-for="nota in total_noticias" :key="nota.id">
                                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
                                                     {{nota.categoria}}
                                                 </td>
